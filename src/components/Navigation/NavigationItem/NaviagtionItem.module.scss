@@ -1,0 +1,22 @@
+@import "../../../style/scss/variable";
+
+.Item {
+  a {
+    display: block;
+    position: relative;
+    padding: 4px 0;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(45deg, $primary-color, $secondary-color);
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../style/scss/variable";
+
+.Header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  z-index: 200;
+  transition: 0.2s linear;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.Active {
+  background-color: $primary-color;
+}
