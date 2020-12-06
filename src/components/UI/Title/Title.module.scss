@@ -1,0 +1,11 @@
+@import "../../../style/scss/variable";
+
+.Title {
+  h1 {
+    font-size: $h1-font-size;
+  }
+
+  p {
+    font-size: $p-font-size;
+  }
+}

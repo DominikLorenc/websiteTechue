@@ -1,0 +1,18 @@
+.imgAnimation {
+  animation: move 4s infinite linear alternate;
+  margin: 40px 0;
+
+  img {
+    width: 100%;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateY(-30px);
+    }
+
+    to {
+      transform: translateY(30px);
+    }
+  }
+}

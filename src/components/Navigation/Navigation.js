@@ -23,12 +23,12 @@ const Navigation = (props) => {
   }
 
   return (
-    <header className={styleHeader.join(" ")}>
+    <nav className={styleHeader.join(" ")}>
       <Logo />
       <Hamburger changeColor={scrollDown} clicked={openNavigation} />
 
       <NavigationItems show={activeNavigation} />
-    </header>
+    </nav>
   );
 };
 
