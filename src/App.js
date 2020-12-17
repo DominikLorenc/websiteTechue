@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 import "./App.module.scss";
+import HomePage from "./container/HomePage/HomePage";
 
 function App() {
-  return (
-    <p>Porject-one</p>
-  )
+  return <HomePage />;
 }
 
 export default App;

@@ -1,0 +1,9 @@
+.Hamburger {
+  cursor: pointer;
+  transition: 0.2s linear;
+
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
