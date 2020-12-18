@@ -8,16 +8,16 @@ import styled from "./SocialBar.module.scss";
 const SocialBar = (props) => {
   return (
     <div className={styled.SocialBar}>
-      <a href={"/"}>
+      <a className={styled.Link} href={"/"}>
         <FaFacebookF />
       </a>
-      <a href={"/"}>
+      <a className={styled.Link} href={"/"}>
         <FaInstagram />
       </a>
-      <a href={"/"}>
+      <a className={styled.Link} href={"/"}>
         <FaLinkedinIn />
       </a>
-      <a href={"/"}>
+      <a className={styled.Link} href={"/"}>
         <FaTwitter />
       </a>
     </div>

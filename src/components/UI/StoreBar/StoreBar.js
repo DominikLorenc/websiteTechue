@@ -6,11 +6,11 @@ import playLogo from "../../../assets/gplay_icon.png";
 const StoreBar = (prosp) => {
   return (
     <div className={styled.StoreBar}>
-      <a href={"/"}>
-        <img src={appleLogo} alt={"logo Apple"} />
+      <a className={styled.Link} href={"/"}>
+        <img className={styled.Image} src={appleLogo} alt={"logo Apple"} />
       </a>
-      <a href={"/"}>
-        <img src={playLogo} alt={"logo Google Play"} />
+      <a className={styled.Link} href={"/"}>
+        <img className={styled.Image} src={playLogo} alt={"logo Google Play"} />
       </a>
     </div>
   );
