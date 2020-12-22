@@ -6,8 +6,6 @@ import img1 from "../../assets/mobile-app-img.svg";
 import img2 from "../../assets/social-integration-img.svg";
 import img3 from "../../assets/ecommerce-addons-img.svg";
 
-
-
 const contentCards = [
   {
     image: img1,
@@ -35,6 +33,7 @@ const contentCards = [
 const Highlight = (props) => {
   const cards = contentCards.map((card) => (
     <Card
+      key={card.title}
       highlighted={card.highlighted}
       image={card.image}
       title={card.title}
