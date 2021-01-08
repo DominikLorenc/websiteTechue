@@ -1,8 +1,10 @@
 .Logo {
-  height: 150%;
+  width: 100%;
+  min-width: 16rem;
+  max-width: 20rem;
   cursor: pointer;
 
-  img {
-    height: 100%;
+  .Img {
+    width: 100%;
   }
 }

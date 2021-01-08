@@ -1,12 +1,14 @@
 @import "../../../style/scss/variable";
 
-.NavItems {
+.Items {
   margin: 0;
-  padding: 20px 0;
+  padding: 2rem 0;
   position: fixed;
-  top: 50px;
+  top: 7rem;
   left: 0;
   width: 100%;
+  min-width: 30rem;
+  max-width: 77rem;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -17,14 +19,15 @@
 }
 
 @media (min-width: 768px) {
-  .NavItems {
-    margin-left: 40px;
+  .Items {
+    margin-left: 4rem;
     position: static;
     background-color: transparent;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    max-width: 1024px;
+    min-width: 50rem;
+    max-width: 100rem;
     transform: translateY(0);
   }
 }

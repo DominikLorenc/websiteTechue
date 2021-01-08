@@ -1,2 +1,5 @@
-@mixin flex-layout($direction,justify-conten) {
-  
+@mixin flex-center-horizont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
