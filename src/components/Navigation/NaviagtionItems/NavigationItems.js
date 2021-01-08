@@ -1,11 +1,12 @@
 import React from "react";
 import NavigationItem from "../NavigationItem/NavigationItem";
 import styled from "./NavigationItems.module.scss";
+import PropTypes from "prop-types";
 
 const NavigationItems = (props) => {
-  let styleItems = [styled.NavItems];
+  let styleItems = [styled.Items];
   if (props.show) {
-    styleItems = [styled.NavItems, styled.Active];
+    styleItems = [styled.Items, styled.Active];
   }
 
   return (
@@ -18,6 +19,10 @@ const NavigationItems = (props) => {
       <NavigationItem>Contact</NavigationItem>
     </ul>
   );
+};
+
+NavigationItems.propTypes = {
+  show: PropTypes.bool,
 };
 
 export default NavigationItems;

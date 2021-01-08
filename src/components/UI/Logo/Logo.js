@@ -6,7 +6,7 @@ const Logo = (props) => {
   return (
     <div className={styled.Logo}>
       <a href={"/"}>
-        <img src={logo} alt={"logo"} />
+        <img className={styled.Img} src={logo} alt={"logo"} />
       </a>
     </div>
   );

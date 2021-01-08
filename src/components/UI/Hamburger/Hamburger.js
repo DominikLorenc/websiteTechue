@@ -8,7 +8,7 @@ const Hamburger = (props) => {
     <IconContext.Provider
       value={{
         className: styled.Hamburger,
-        size: "30px",
+        size: "3rem",
         color: props.changeColor ? "white" : "#5D5D5D",
       }}
     >
