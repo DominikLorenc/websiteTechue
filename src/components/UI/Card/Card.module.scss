@@ -1,0 +1,61 @@
+.Card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  min-width: 25rem;
+  max-width: 51rem;
+
+  padding: 3.5rem 5rem;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 2rem 1rem;
+
+  .Container_img {
+    width: 100%;
+  }
+
+  .Container_img .Img {
+    width: 100%;
+  }
+
+  .Description {
+    margin-bottom: 3rem;
+  }
+
+  .Link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #4c9bde;
+    font-size: 1.4rem;
+    border: 2px solid #4c9bde;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+.Highlighted_card {
+  background: linear-gradient(140deg, #ea42ff, #0f82e3);
+  min-width: 27rem;
+  max-width: 53rem;
+  color: white;
+  padding: 3.5rem 3rem;
+
+  .Link {
+    color: white;
+    border-color: white;
+  }
+}
+
+@media (min-width: 993px) {
+  .Card {
+    min-width: 25rem;
+    max-width: 32rem;
+  }
+
+  .Highlighted_card {
+    min-width: 25rem;
+    max-width: 34rem;
+  }
+}

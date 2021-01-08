@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../../components/Navigation/Navigation";
+import Highlights from "../../components/Highlights/Highlights";
 import ImageAnimation from "../../components/UI/ImageAnimation/ImageAniamtion";
 import styled from "./HomePage.module.scss";
 import headerImg from "../../assets/header-img.svg";
@@ -11,6 +12,7 @@ const HomePage = (props) => {
   return (
     <div>
       <Navigation />
+      <Highlights />
       <header className={styled.HeaderSection}>
         <ImageAnimation source={headerImg} />
         <div className={styled.HeaderSocialSection}>
