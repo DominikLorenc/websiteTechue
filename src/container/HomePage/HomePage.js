@@ -12,7 +12,6 @@ const HomePage = (props) => {
   return (
     <div>
       <Navigation />
-      <Highlights />
       <header className={styled.HeaderSection}>
         <ImageAnimation source={headerImg} />
         <div className={styled.HeaderSocialSection}>
@@ -29,6 +28,7 @@ const HomePage = (props) => {
           <SocialBar />
         </div>
       </header>
+      <Highlights />
     </div>
   );
 };
