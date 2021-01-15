@@ -1,0 +1,58 @@
+.Features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 114rem;
+  // min-width: 430px;
+  margin: 0 auto;
+  padding: 0 4rem;
+
+  @media (min-width: 993px) {
+    & {
+      flex-direction: row;
+      align-items: center;
+      padding: 0 4rem;
+    }
+  }
+}
+
+.ImgContainer {
+  max-width: 75%;
+
+  @media (min-width: 768px) {
+    & {
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: 993px) {
+    & {
+      padding-right: 4rem;
+      min-width: 40%;
+    }
+  }
+}
+
+.Content {
+  max-width: 74rem;
+
+  @media (max-width: 993px) {
+    & {
+      text-align: center;
+    }
+  }
+}
+
+.FeaturesContainer {
+  margin: 4.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 0 0 4rem;
+  text-align: left;
+  @media (max-width: 993px) {
+    & {
+      padding: 0;
+    }
+  }
+}

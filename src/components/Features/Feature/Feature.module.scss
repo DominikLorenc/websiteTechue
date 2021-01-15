@@ -1,0 +1,32 @@
+.Feature {
+  display: flex;
+  align-items: flex-start;
+  flex-basis: 100%;
+  margin-bottom: 4rem;
+
+  @media (min-width: 768px) {
+    & {
+      flex-basis: 50%;
+      padding: 0 2rem 0 0;
+    }
+  }
+}
+
+.ImgFeature {
+  width: 5rem;
+  height: auto;
+}
+
+.FeatureContent {
+  padding-left: 2rem;
+}
+
+.Title {
+  font-size: 1.9rem;
+  margin: 0 0 1rem;
+}
+
+.Description {
+  font-size: 1.4rem;
+  margin: 0;
+}

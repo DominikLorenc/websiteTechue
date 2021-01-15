@@ -1,17 +1,21 @@
-
 @import "../../node_modules/modern-normalize/modern-normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-size: 1.6rem;
-  // background-color: #333;
+  font-family: "Montserrat", sans-serif;
   height: 200vh;
   font-size: 1.6rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
