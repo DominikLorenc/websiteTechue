@@ -1,0 +1,12 @@
+@import "../../style/scss/variable";
+
+.Partners {
+  padding: 10rem 0;
+  text-align: center;
+  background: linear-gradient(50deg, $secondary-color, $primary-color);
+}
+
+.Carousel {
+  max-width: 114rem;
+  margin: 0 auto;
+}
