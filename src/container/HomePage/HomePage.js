@@ -8,6 +8,7 @@ import Title from "../../components/UI/Title/Title";
 import StoreBar from "../../components/UI/StoreBar/StoreBar";
 import SocialBar from "../../components/UI/SocialBar/SocialBar";
 import Features from "../../components/Features/Features";
+import Partners from "../../components/Partners/Partners";
 
 const HomePage = (props) => {
   return (
@@ -31,6 +32,7 @@ const HomePage = (props) => {
       </header>
       <Highlights />
       <Features/>
+      <Partners />
     </div>
   );
 };
