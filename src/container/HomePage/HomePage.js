@@ -7,6 +7,7 @@ import headerImg from "../../assets/header-img.svg";
 import Title from "../../components/UI/Title/Title";
 import StoreBar from "../../components/UI/StoreBar/StoreBar";
 import SocialBar from "../../components/UI/SocialBar/SocialBar";
+import Partners from "../../components/Partners/Partners";
 
 const HomePage = (props) => {
   return (
@@ -29,6 +30,7 @@ const HomePage = (props) => {
         </div>
       </header>
       <Highlights />
+      <Partners />
     </div>
   );
 };
