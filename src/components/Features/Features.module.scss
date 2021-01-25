@@ -1,3 +1,6 @@
+@import "../../style/scss/variable";
+@import "../../style/scss/mixin";
+
 .Features {
   display: flex;
   flex-direction: column;
@@ -7,39 +10,32 @@
   margin: 0 auto;
   padding: 0 4rem;
 
-  @media (min-width: 993px) {
-    & {
-      flex-direction: row;
-      align-items: center;
-      padding: 0 4rem;
-    }
+  @include breakpoint($desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 4rem;
   }
 }
 
 .ImgContainer {
   max-width: 75%;
 
-  @media (min-width: 768px) {
-    & {
-      max-width: 50%;
-    }
+  @include breakpoint($tablet-width) {
+    max-width: 50%;
   }
 
-  @media (min-width: 993px) {
-    & {
-      padding-right: 4rem;
-      min-width: 40%;
-    }
+  @include breakpoint($desktop-width) {
+    padding-right: 4rem;
+    min-width: 40%;
   }
 }
 
 .Content {
   max-width: 74rem;
+  text-align: center;
 
-  @media (max-width: 993px) {
-    & {
-      text-align: center;
-    }
+  @include breakpoint($desktop-width) {
+    text-align: left;
   }
 }
 
@@ -50,7 +46,8 @@
   justify-content: center;
   padding: 0 0 0 4rem;
   text-align: left;
-  @media (max-width: 993px) {
+
+  @media (max-width: $desktop-width) {
     & {
       padding: 0;
     }

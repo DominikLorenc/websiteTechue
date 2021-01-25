@@ -9,8 +9,7 @@ import launchPad from "../../assets/launch-pad-img.svg";
 import support from "../../assets/support-247-img.svg";
 import happyCustomers from "../../assets/happy-customers-img.svg";
 import social from "../../assets/social-compatibility-img.svg";
-import TitleSection from "./TitleSection/TitleSection";
-
+import TitleSection from "../UI/TitleSection/TitleSection";
 
 const featureContent = [
   {
@@ -49,7 +48,7 @@ const Features = (props) => {
   const feature = featureContent.map((el) => {
     return (
       <Feature
-        ket={el.title}
+        key={el.title}
         img={el.img}
         title={el.title}
         description={el.description}

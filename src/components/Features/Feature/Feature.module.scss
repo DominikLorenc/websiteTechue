@@ -1,14 +1,22 @@
+@import "../../../style/scss/mixin";
+@import "../../../style/scss/variable";
+
 .Feature {
   display: flex;
   align-items: flex-start;
   flex-basis: 100%;
   margin-bottom: 4rem;
 
-  @media (min-width: 768px) {
-    & {
-      flex-basis: 50%;
-      padding: 0 2rem 0 0;
-    }
+  // @media (min-width: 768px) {
+  //   & {
+  //     flex-basis: 50%;
+  //     padding: 0 2rem 0 0;
+  //   }
+  // }
+
+  @include breakpoint($tablet-width) {
+    flex-basis: 50%;
+    padding: 0 4rem 0 0;
   }
 }
 
