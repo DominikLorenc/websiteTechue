@@ -8,11 +8,21 @@
     font-size: 1.6rem;
     color: #333;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.1rem;
+    cursor: pointer;
   }
 
-  .Link:hover::after {
+  .Button {
+    @extend .Link;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .Link:hover::after,
+  .Button:hover::after {
     content: "";
     position: absolute;
     left: 0;
@@ -20,5 +30,16 @@
     height: 0.2rem;
     width: 100%;
     background: linear-gradient(45deg, $primary-color, $secondary-color);
+  }
+
+  .Active::after {
+    @extend .Button:hover::after;
+    // content: "";
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // height: 0.2rem;
+    // width: 100%;
+    // background: linear-gradient(45deg, $primary-color, $secondary-color);
   }
 }

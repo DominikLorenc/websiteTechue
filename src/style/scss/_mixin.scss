@@ -9,3 +9,20 @@
     @content;
   }
 }
+
+@mixin flex-column($justify, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin reset-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin gradients($degree, $color1, $color2) {
+  background: linear-gradient($degree, $color1, $color2);
+}

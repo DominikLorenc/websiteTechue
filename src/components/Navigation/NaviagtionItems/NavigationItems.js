@@ -9,6 +9,7 @@ const NavigationItems = (props) => {
     styleItems = [styled.Items, styled.Active];
   }
 
+
   return (
     <ul className={styleItems.join(" ")}>
       <NavigationItem>Home</NavigationItem>
