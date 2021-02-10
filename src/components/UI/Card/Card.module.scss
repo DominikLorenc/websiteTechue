@@ -1,9 +1,11 @@
+@import "../../../style/scss/mixin";
+@import "../../../style/scss/variable";
+
 .Card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 100%;
   min-width: 25rem;
   max-width: 51rem;
 
@@ -12,10 +14,7 @@
   border-radius: 2rem;
   margin: 2rem 1rem;
 
-  .Container_img {
-    width: 100%;
-  }
-
+  .Container_img,
   .Container_img .Img {
     width: 100%;
   }
@@ -36,7 +35,7 @@
 }
 
 .Highlighted_card {
-  background: linear-gradient(140deg, #ea42ff, #0f82e3);
+  @include gradients(140deg, $secondary-color, $primary-color);
   min-width: 27rem;
   max-width: 53rem;
   color: white;
@@ -58,4 +57,80 @@
     min-width: 25rem;
     max-width: 34rem;
   }
+}
+
+.BlogCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include gradients(50deg, $secondary-color, $primary-color);
+  border-radius: 2rem;
+  padding: 2.5rem 3rem;
+  text-align: left;
+  color: white;
+  margin: 2.5rem;
+  max-width: 42rem;
+  transition: 0.5s linear;
+  transform: scale(1);
+  opacity: 1;
+
+  @include breakpoint($tablet-width) {
+    max-width: 32rem;
+    padding: 3rem 2rem;
+  }
+
+  .Container_img {
+    padding-top: 4.5rem;
+    text-align: center;
+  }
+
+  .Container_img .Img {
+    width: 75%;
+  }
+
+  .Title {
+    text-transform: capitalize;
+  }
+
+  .Description {
+    margin-bottom: 2rem;
+  }
+
+  .CardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Likes {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+  }
+
+  .ViewMore {
+    padding: 0 1.1rem 0 0;
+    font-weight: 700;
+  }
+
+  .ViewArrow {
+    vertical-align: middle;
+    transition: 0.2s linear;
+  }
+
+  .ViewMore:hover .ViewArrow {
+    transform: translateX(1rem);
+  }
+
+  .ViewLink {
+    color: white;
+    @include reset-link;
+  }
+}
+
+.IsVisible {
+  position: absolute;
+  z-index: -1;
+  transform: scale(0);
+  opacity: 0;
 }
