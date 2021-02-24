@@ -10,6 +10,7 @@ import SocialBar from "../../components/UI/SocialBar/SocialBar";
 import Features from "../../components/Features/Features";
 import Partners from "../../components/Partners/Partners";
 import Blog from "../../components/Blog/Blog";
+import PerfectionSection from "../../components/PerfectionSection/PerfectionSection";
 
 const HomePage = (props) => {
   return (
@@ -35,6 +36,7 @@ const HomePage = (props) => {
       <Features />
       <Partners />
       <Blog />
+      <PerfectionSection />
     </div>
   );
 };

@@ -8,11 +8,11 @@
 
   @keyframes move {
     from {
-      transform: translateY(-30px);
+      transform: translateY(-2rem);
     }
 
     to {
-      transform: translateY(30px);
+      transform: translateY(0);
     }
   }
 }

@@ -1,0 +1,37 @@
+@import "../../style/scss/mixin";
+@import "../../style/scss/variable";
+
+.PerfectionSection {
+  @include gradients(50deg, $secondary-color, $primary-color);
+  padding: 10rem 0 12rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  @include breakpoint($tablet-width) {
+    padding-bottom: 18rem;
+  }
+  @include breakpoint($desktop-width) {
+    padding-bottom: 38rem;
+  }
+}
+
+.PerfectionContent {
+  @include flex-center-horizont;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.ImgContainer {
+  position: absolute;
+  top: 70%;
+  width: 85%;
+  max-width: 114rem;
+  @include breakpoint($tablet-width) {
+    top: 55%;
+  }
+  @include breakpoint($desktop-width) {
+    top:35%;
+  }
+}
