@@ -11,6 +11,7 @@ import Features from "../../components/Features/Features";
 import Partners from "../../components/Partners/Partners";
 import Blog from "../../components/Blog/Blog";
 import PerfectionSection from "../../components/PerfectionSection/PerfectionSection";
+import ReviewSection from "../../components/ReviewSection/ReviewSection";
 
 const HomePage = (props) => {
   return (
@@ -37,6 +38,7 @@ const HomePage = (props) => {
       <Partners />
       <Blog />
       <PerfectionSection />
+      <ReviewSection />
     </div>
   );
 };

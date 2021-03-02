@@ -1,0 +1,35 @@
+@import "../../../style/scss/mixin";
+@import "../../../style/scss/variable";
+
+.ReviewCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.ImgContainer{
+    border: 6px solid $secondary-color;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+}
+
+.Img{
+    width: 100%;
+}
+
+.Profession{
+    margin-bottom: 2rem;
+}
+
+.Description{
+    padding: 4.5rem 4rem;
+    width: 100%;
+    border-radius: 15px;
+    color: white;
+    @include gradients(50deg, $secondary-color, $primary-color);
+}

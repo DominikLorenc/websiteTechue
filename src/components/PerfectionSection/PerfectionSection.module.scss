@@ -7,8 +7,17 @@
   text-align: center;
   color: white;
   position: relative;
+  @include breakpoint('400px') {
+    margin-bottom: 5rem;
+  }
+
+  @include breakpoint('510px') {
+    margin-bottom: 15rem;
+  }
+
   @include breakpoint($tablet-width) {
     padding-bottom: 18rem;
+    margin-bottom: 20rem;
   }
   @include breakpoint($desktop-width) {
     padding-bottom: 38rem;
