@@ -1,0 +1,61 @@
+@import "../../style/scss/mixin";
+@import "../../style/scss/variable";
+
+.ContactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 4rem;
+  @include gradients(30deg,
+  rgba(236, 65, 255, 0.1),
+  rgba(9, 132, 227, 0.1));
+  @include breakpoint($tablet-width){
+      flex-direction: row;
+      justify-content: center;
+  }
+
+}
+
+.FormSection{
+    @include breakpoint($tablet-width){ 
+        padding: 0 12rem  0 0;
+    }
+
+    
+}
+
+.TitleContainer,
+.Form, 
+.ImgContainer {
+  max-width: 40rem;
+  min-width: 32rem;
+  @include breakpoint($tablet-width){ 
+    max-width: 56rem;
+}
+}
+
+.ImgContainer{
+    @include breakpoint($tablet-width){ 
+        max-width: 40rem;
+    }
+}
+
+.Form {
+  margin: 4rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SubmitBtn {
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 1.2rem 1rem;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  @include gradients(60deg, $secondary-color, $primary-color);
+}
