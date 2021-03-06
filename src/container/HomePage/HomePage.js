@@ -12,6 +12,7 @@ import Partners from "../../components/Partners/Partners";
 import Blog from "../../components/Blog/Blog";
 import PerfectionSection from "../../components/PerfectionSection/PerfectionSection";
 import ReviewSection from "../../components/ReviewSection/ReviewSection";
+import ContactSection from "../../components/ContactSection/ContactSection";
 
 const HomePage = (props) => {
   return (
@@ -39,6 +40,7 @@ const HomePage = (props) => {
       <Blog />
       <PerfectionSection />
       <ReviewSection />
+      <ContactSection />
     </div>
   );
 };
