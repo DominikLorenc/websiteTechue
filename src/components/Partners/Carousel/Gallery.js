@@ -4,7 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import logo1 from "../../../assets/dummy_logo1.png";
 import logo2 from "../../../assets/dummy_logo2.png";
 import logo3 from "../../../assets/dummy_logo3.png";
-import styled from "./Casousel.module.scss";
+import styled from "./Gallery.module.scss";
 
 const Gallery = () => {
   const handleOnDragStart = (e) => e.preventDefault();
@@ -14,6 +14,8 @@ const Gallery = () => {
     760: { items: 3 },
     1024: { items: 4 },
   };
+
+  
 
   return (
     <AliceCarousel

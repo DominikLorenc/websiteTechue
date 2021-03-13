@@ -14,13 +14,18 @@ import PerfectionSection from "../../components/PerfectionSection/PerfectionSect
 import ReviewSection from "../../components/ReviewSection/ReviewSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import Footer from "../../components/Footer/Footer";
+import bgImg from "../../assets/header-bg.svg";
 
 
 const HomePage = (props) => {
   return (
     <div>
+       <div className={styled.BgHeaderContainer}>
+          <img className={styled.BgHeaderImg} src={bgImg} alt={"bg"}></img>
+        </div>
       <Navigation />
       <header className={styled.HeaderSection}>
+       
         <ImageAnimation source={headerImg} />
         <div className={styled.HeaderSocialSection}>
           <Title

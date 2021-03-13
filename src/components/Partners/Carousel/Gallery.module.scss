@@ -1,11 +1,15 @@
 @import '../../../style/scss/variable';
 
+.Image{
+  width: 100%;
+}
+
 .alice-carousel__dots .alice-carousel__dots-item{
-    width: 1rem;
-    height: 1rem;
-    background: #ccc;
+  width: 12rem;
+  height: 1rem;
+  background: #ccc;
 }
 
 .alice-carousel__dots .alice-carousel__dots-item.__active{
-    background: $secondary-color;
+  background: $secondary-color;
 }

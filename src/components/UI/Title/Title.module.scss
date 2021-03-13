@@ -1,11 +1,16 @@
 @import "../../../style/scss/variable";
+@import "../../../style/scss/mixin";
 
-.Title {
-  h1 {
+.TitleSection {
+ 
+  .Title{
     font-size: $h1-font-size;
+    @include breakpoint($desktop-width){
+      width: 140%;
+    }
   }
 
-  p {
+  .Subtitle {
     font-size: $p-font-size;
   }
 }

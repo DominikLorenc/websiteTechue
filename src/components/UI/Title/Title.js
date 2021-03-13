@@ -3,9 +3,9 @@ import styled from "./Title.module.scss";
 
 const Title = (props) => {
   return (
-    <div className={styled.Title}>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
+    <div className={styled.TitleSection}>
+      <h1 className={styled.Title}>{props.title}</h1>
+      <p className={styled.Subtitle}>{props.description}</p>
     </div>
   );
 };

@@ -5,11 +5,19 @@ import "./GalleryCard.scss";
 import ReviewCard from "../ReviewCard/ReviewCard";
 
 const GalleryCard = ({ clients }) => {
-  const item = clients.map(({ id,src,name,proffesion,description }) => <ReviewCard key={id} src={src} name={name} proffesion={proffesion} description={description} />);
+  const item = clients.map(({ id, src, name, proffesion, description }) => (
+    <ReviewCard
+      key={id}
+      src={src}
+      name={name}
+      proffesion={proffesion}
+      description={description}
+    />
+  ));
 
   return (
     <AliceCarousel disableButtonsControls={true} mouseTracking={true}>
-     {item}
+      {item}
     </AliceCarousel>
   );
 };

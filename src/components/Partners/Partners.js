@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery from "./Carousel/Carousel";
+import Gallery from "./Carousel/Gallery";
 import styled from "./Partners.module.scss";
 import TitleSection from "../UI/TitleSection/TitleSection";
 
