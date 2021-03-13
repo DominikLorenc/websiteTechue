@@ -13,6 +13,8 @@ import Blog from "../../components/Blog/Blog";
 import PerfectionSection from "../../components/PerfectionSection/PerfectionSection";
 import ReviewSection from "../../components/ReviewSection/ReviewSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
+import Footer from "../../components/Footer/Footer";
+
 
 const HomePage = (props) => {
   return (
@@ -41,6 +43,7 @@ const HomePage = (props) => {
       <PerfectionSection />
       <ReviewSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 };
