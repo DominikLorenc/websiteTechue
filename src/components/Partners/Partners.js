@@ -2,10 +2,13 @@ import React from "react";
 import Gallery from "./Carousel/Gallery";
 import styled from "./Partners.module.scss";
 import TitleSection from "../UI/TitleSection/TitleSection";
+import { Element } from "react-scroll";
 
 const Partners = (props) => {
   return (
-    <section className={styled.Partners}>
+    
+ <Element name='partners'>
+      <section className={styled.Partners}>
       <TitleSection
         subtitle={"We work with the best"}
         title={"Our Partners"}
@@ -17,6 +20,7 @@ const Partners = (props) => {
         <Gallery />
       </div>
     </section>
+ </Element>
   );
 };
 

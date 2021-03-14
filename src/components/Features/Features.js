@@ -10,6 +10,7 @@ import support from "../../assets/support-247-img.svg";
 import happyCustomers from "../../assets/happy-customers-img.svg";
 import social from "../../assets/social-compatibility-img.svg";
 import TitleSection from "../UI/TitleSection/TitleSection";
+import { Element } from "react-scroll";
 
 const featureContent = [
   {
@@ -58,12 +59,13 @@ const Features = (props) => {
   });
 
   return (
-    <section className={styled.Features}>
-      <div className={styled.ImgContainer}>
-        <ImageAnimation source={features} />
-      </div>
-      <div className={styled.Content}>
-        {/* <div className={styled.TitleSection}>
+     <Element name='feature'>
+      <section className={styled.Features}>
+          <div className={styled.ImgContainer}>
+            <ImageAnimation source={features} />
+          </div>
+          <div className={styled.Content}>
+            {/* <div className={styled.TitleSection}>
           <p>About our application</p>
           <h2>Some of our features</h2>
           <p>
@@ -72,16 +74,17 @@ const Features = (props) => {
             features.
           </p>
         </div> */}
-        <TitleSection
-          subtitle={"About our application"}
-          title={"Some of our features"}
-          description={`Don't be afraid to brag about some of your unique selling points
+            <TitleSection
+              subtitle={"About our application"}
+              title={"Some of our features"}
+              description={`Don't be afraid to brag about some of your unique selling points
             here. Your visitors would love to find out more about your service
             features.`}
-        />
-        <div className={styled.FeaturesContainer}>{feature}</div>
-      </div>
-    </section>
+            />
+            <div className={styled.FeaturesContainer}>{feature}</div>
+          </div>
+        </section>
+     </Element>
   );
 };
 

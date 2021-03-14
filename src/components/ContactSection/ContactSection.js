@@ -4,6 +4,7 @@ import ImageAnimation from "../UI/ImageAnimation/ImageAniamtion";
 import styled from "./ContactSection.module.scss";
 import contactImg from "../../assets/contact.png";
 import Input from "../UI/Input/Input";
+import { Element } from "react-scroll";
 
 const ContactSection = (props) => {
   const [formState, setFormState] = useState([
@@ -59,7 +60,8 @@ const ContactSection = (props) => {
   );
 
   return (
-    <section className={styled.ContactSection}>
+  <Element name='contact'>
+      <section className={styled.ContactSection}>
       <div className={styled.FormSection}>
         <div className={styled.TitleContainer}>
           <TitleSection
@@ -77,6 +79,7 @@ const ContactSection = (props) => {
         <ImageAnimation source={contactImg} />
       </div>
     </section>
+  </Element>
   );
 };
 
