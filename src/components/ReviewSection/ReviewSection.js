@@ -5,7 +5,7 @@ import styled from "./ReviewSection.module.scss";
 import user1 from "../../assets/user.svg";
 import user2 from "../../assets/user2.svg";
 import user3 from "../../assets/user3.svg";
-
+import { Element } from "react-scroll";
 const clients = [
   {
     id: 0,
@@ -32,13 +32,15 @@ const clients = [
 
 const ReviewSection = (props) => {
   return (
-    <section className={styled.ReviewSection}>
+    <Element name='reviews'>
+      <section className={styled.ReviewSection}>
       <TitleSection
         subtitle={"What they say about us"}
         title={"Client reviews"}
       />
       <GalleryCard clients={clients} />
     </section>
+    </Element>
   );
 };
 

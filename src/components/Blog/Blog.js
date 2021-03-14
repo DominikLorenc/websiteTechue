@@ -8,6 +8,7 @@ import Card from "../UI/Card/Card";
 import blog1Img from "../../assets/blog1.png";
 import blog2Img from "../../assets/blog2.png";
 import blog3Img from "../../assets/blog3.png";
+import { Element } from "react-scroll";
 
 const navItemsContents = ["all", "creative", "fintech", "modern", "marketing"];
 
@@ -104,11 +105,13 @@ const Blog = (props) => {
   );
 
   return (
-    <section className={styled.Blog}>
+   <Element name='blog'>
+      <section className={styled.Blog}>
       <TitleSection subtitle={"Featured stories"} title={"Our blog"} />
       <ul className={styled.BlogNavigation}>{navItems}</ul>
       <div className={styled.BlogCardsContainer}>{cards}</div>
     </section>
+   </Element>
   );
 };
 

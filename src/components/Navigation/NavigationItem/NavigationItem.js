@@ -1,9 +1,9 @@
 import React from "react";
-
 import styled from "./NaviagtionItem.module.scss";
+import { Link } from "react-scroll";
 import PropTypes from "prop-types";
 
-const NavigationItem = ({ btn, children, click, id, selectedID }) => {
+const NavigationItem = ({ btn, children, click, id, selectedID, scrollTo }) => {
   let styles = [styled.Button];
 
   if (id === selectedID) {
@@ -17,9 +17,17 @@ const NavigationItem = ({ btn, children, click, id, selectedID }) => {
           {children}
         </button>
       ) : (
-        <a className={styled.Link} href="/#">
+        <Link
+          to={scrollTo}
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className={styled.Link}
+          activeClass={styled.Active}
+        >
           {children}
-        </a>
+        </Link>
       )}
     </li>
   );
@@ -31,6 +39,7 @@ NavigationItem.propTypes = {
   click: PropTypes.func,
   id: PropTypes.number,
   selectedID: PropTypes.number,
+  scrollTo: PropTypes.string
 };
 
 export default NavigationItem;
