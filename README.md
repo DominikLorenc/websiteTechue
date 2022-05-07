@@ -25,6 +25,10 @@ npm install
 npm start
 ```
 
+##Live 📍
+
+https://dominiklorenc.github.io/websiteTechue/
+
 ## License 🔱
 
 Under license (MIT, Apache etc)
