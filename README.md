@@ -16,17 +16,8 @@ This is a minimal landing page. This project was create for fun but major goal w
 ## Screenshots 📺
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/47724664/167309860-54e25350-f687-404d-b0b4-b31a17177662.png" alt="Screen shot" >
+<img src="https://user-images.githubusercontent.com/47724664/167310323-a8b58628-ef8e-4740-a5ac-55929aceb12b.png" alt="Screen shot" >
 </p>
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/47724664/167309858-64b19c67-297b-48ec-ab34-c848b7962efa.png" alt="Screen shot" >
-</p>
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/47724664/167309859-bf35263c-dcf9-42b4-8da9-3be4913d6533.png" alt="Screen shot" >
-</p>
-
 
 ## Code Example/Issues 🔍
 
