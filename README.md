@@ -13,6 +13,21 @@ This is a minimal landing page. This project was create for fun but major goal w
 |[SCSS](https://sass-lang.com/)                               | Syntactically Awesome Style Sheet is the superset of CSS |
 | [React Alice Carousel](https://github.com/gajus/react-css-modules)   | React Alice Carousel is a React component for building content galleries, content rotators and          any  carousels.      |
 
+## Screenshots 📺
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/47724664/167309860-54e25350-f687-404d-b0b4-b31a17177662.png" alt="Screen shot" >
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/47724664/167309858-64b19c67-297b-48ec-ab34-c848b7962efa.png" alt="Screen shot" >
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/47724664/167309859-bf35263c-dcf9-42b4-8da9-3be4913d6533.png" alt="Screen shot" >
+</p>
+
+
 ## Code Example/Issues 🔍
 
 If you have any issues, please let me know in the issues section or directly dominiklorenc1270@gmail.com
